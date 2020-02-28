@@ -2,7 +2,6 @@
 
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
@@ -13,17 +12,19 @@
         android:paddingEnd="@dimen/padding"
         tools:context=".MainActivity">
 
-
         <TextView
             android:id="@+id/displayName_textView"
+            android:text="@={entry.name}"
             style="@style/display_details_text_style" />
 
         <TextView
             android:id="@+id/displayNickname_textView"
+            android:text="@={entry.nickname}"
             style="@style/display_details_text_style" />
 
         <TextView
             android:id="@+id/displayAge_textView"
+            android:text="@={entry.age}"
             style="@style/display_details_text_style" />
 
         <TextView
@@ -104,6 +105,20 @@
                     android:inputType="date" />
 
                 <TextView
+                    android:id="@+id/course_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_is_your_course" />
+
+                <EditText
+                    android:id="@+id/course_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/enter_course"
+                    android:inputType="text" />
+
+                <TextView
                     android:id="@+id/mobile_textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -129,20 +144,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/enter_favorite_color"
-                    android:inputType="text" />
-
-                <TextView
-                    android:id="@+id/course_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/what_is_your_course" />
-
-                <EditText
-                    android:id="@+id/course_editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="@string/enter_course"
                     android:inputType="text" />
 
                 <TextView
@@ -195,8 +196,12 @@
 
             </LinearLayout>
         </ScrollView>
-
     </LinearLayout>
 
+    <data>
+        <variable
+            name="entry"
+            type="com.example.resurreccion_exer4_slambook.Entry" />
+    </data>
 
 </layout>

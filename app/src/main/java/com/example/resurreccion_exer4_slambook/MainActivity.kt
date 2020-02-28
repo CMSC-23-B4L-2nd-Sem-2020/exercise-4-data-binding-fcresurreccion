@@ -12,9 +12,14 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private val entry: Entry = Entry()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.entry = entry
 
         binding.doneButton.setOnClickListener {
             addEntry(it)
@@ -25,14 +30,16 @@ class MainActivity : AppCompatActivity() {
         binding.apply{
             scrollView.visibility = View.GONE
 
-            displayNameTextView.text = nameEditText.text.toString()
-            displayNicknameTextView.text = nicknameEditText.text.toString()
-            displayAgeTextView.text = ageEditText.text.toString()
-
             displayNameTextView.visibility = View.VISIBLE
             displayNicknameTextView.visibility = View.VISIBLE
             displayAgeTextView.visibility = View.VISIBLE
             thanksTextView.visibility = View.VISIBLE
+
+            entry?.name = nameEditText.text.toString()
+            entry?.nickname = nicknameEditText.text.toString()
+            entry?.age = ageEditText.text.toString()
+
+            invalidateAll()
         }
 
         // Hide keyboard
