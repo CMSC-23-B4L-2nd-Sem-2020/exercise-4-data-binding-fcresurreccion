@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/enter_birthday"
-                    android:inputType="textPersonName" />
+                    android:inputType="date" />
 
                 <TextView
                     android:id="@+id/mobile_textView"
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/enter_favorite_color"
-                    android:inputType="textPersonName" />
+                    android:inputType="text" />
 
                 <TextView
                     android:id="@+id/course_textView"
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/enter_course"
-                    android:inputType="textPersonName" />
+                    android:inputType="text" />
 
                 <TextView
                     android:id="@+id/dream_textView"
@@ -157,7 +157,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/enter_dream"
-                    android:inputType="textPersonName" />
+                    android:inputType="text" />
 
                 <TextView
                     android:id="@+id/crush_textView"
