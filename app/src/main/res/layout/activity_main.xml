@@ -13,6 +13,8 @@
         android:paddingEnd="@dimen/padding"
         tools:context=".MainActivity">
 
+<!--    text views for displaying name, nickname, age    -->
+
         <TextView
             android:id="@+id/displayName_textView"
             style="@style/display_details_text_style"
@@ -33,6 +35,8 @@
             style="@style/greetings_text_style"
             android:text="@string/thanks_for_answering"
             android:visibility="gone" />
+
+<!--    views for questions and editable texts    -->
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -191,6 +195,7 @@
         </ScrollView>
     </LinearLayout>
 
+    <!--  Create data variable named 'entry'  -->
     <data>
         <variable
             name="entry"

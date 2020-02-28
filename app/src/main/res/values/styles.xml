@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<!--  text style for hello and thanks for answering  -->
     <style name="greetings_text_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -19,6 +20,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+<!--  text style for name, nickname and age  -->
     <style name="display_details_text_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -31,6 +33,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+<!--  text style for questions in the slambook  -->
     <style name="question_text_style">
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/cutive_mono</item>

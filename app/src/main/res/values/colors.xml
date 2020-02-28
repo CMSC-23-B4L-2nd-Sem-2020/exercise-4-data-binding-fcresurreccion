@@ -3,7 +3,13 @@
     <color name="colorPrimary">#004D58</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+<!--  color for the texts  -->
     <color name="colorText">#000000</color>
+
+<!--  color for the button  -->
     <color name="colorButton">#97E0FF</color>
+
+<!--  color for the background  -->
     <color name="colorBackground">#FFE7CD</color>
 </resources>
