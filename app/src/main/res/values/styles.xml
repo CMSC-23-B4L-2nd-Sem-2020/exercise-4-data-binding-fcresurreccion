@@ -12,15 +12,33 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/cutive_mono</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="display_details_text_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:visibility">gone</item>
+        <item name="android:fontFamily">@font/cutive_mono</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="question_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/cutive_mono</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

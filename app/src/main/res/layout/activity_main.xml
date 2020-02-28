@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorBackground"
         android:orientation="vertical"
         android:paddingStart="@dimen/padding"
         android:paddingEnd="@dimen/padding"
@@ -14,24 +15,24 @@
 
         <TextView
             android:id="@+id/displayName_textView"
-            android:text="@={entry.name}"
-            style="@style/display_details_text_style" />
+            style="@style/display_details_text_style"
+            android:text="@={entry.name}" />
 
         <TextView
             android:id="@+id/displayNickname_textView"
-            android:text="@={entry.nickname}"
-            style="@style/display_details_text_style" />
+            style="@style/display_details_text_style"
+            android:text="@={entry.nickname}" />
 
         <TextView
             android:id="@+id/displayAge_textView"
-            android:text="@={entry.age}"
-            style="@style/display_details_text_style" />
+            style="@style/display_details_text_style"
+            android:text="@={entry.age}" />
 
         <TextView
             android:id="@+id/thanks_textView"
+            style="@style/greetings_text_style"
             android:text="@string/thanks_for_answering"
-            android:visibility="gone"
-            style="@style/greetings_text_style" />
+            android:visibility="gone" />
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -45,13 +46,12 @@
 
                 <TextView
                     android:id="@+id/hello_textView"
-                    android:text="@string/hello"
-                    style="@style/greetings_text_style" />
+                    style="@style/greetings_text_style"
+                    android:text="@string/hello" />
 
                 <TextView
                     android:id="@+id/name_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/name" />
 
                 <EditText
@@ -64,8 +64,7 @@
 
                 <TextView
                     android:id="@+id/nickname_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/nickname" />
 
                 <EditText
@@ -78,8 +77,7 @@
 
                 <TextView
                     android:id="@+id/age_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/age" />
 
                 <EditText
@@ -92,8 +90,7 @@
 
                 <TextView
                     android:id="@+id/birthday_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/when_is_your_birthday" />
 
                 <EditText
@@ -106,8 +103,7 @@
 
                 <TextView
                     android:id="@+id/course_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/what_is_your_course" />
 
                 <EditText
@@ -120,8 +116,7 @@
 
                 <TextView
                     android:id="@+id/mobile_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/what_is_your_mobile_number" />
 
                 <EditText
@@ -134,8 +129,7 @@
 
                 <TextView
                     android:id="@+id/color_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/what_is_your_favorite_color" />
 
                 <EditText
@@ -148,8 +142,7 @@
 
                 <TextView
                     android:id="@+id/dream_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/what_is_your_ultimate_dream" />
 
                 <EditText
@@ -162,8 +155,7 @@
 
                 <TextView
                     android:id="@+id/crush_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/who_is_your_secret_crush" />
 
                 <EditText
@@ -176,8 +168,7 @@
 
                 <TextView
                     android:id="@+id/message_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/question_text_style"
                     android:text="@string/what_is_your_message_for_me" />
 
                 <EditText
@@ -192,6 +183,8 @@
                     android:id="@+id/done_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:background="@color/colorButton"
                     android:text="@string/done" />
 
             </LinearLayout>
