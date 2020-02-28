@@ -14,22 +14,38 @@
         tools:context=".MainActivity">
 
 
+        <TextView
+            android:id="@+id/displayName_textView"
+            style="@style/display_details_text_style" />
+
+        <TextView
+            android:id="@+id/displayNickname_textView"
+            style="@style/display_details_text_style" />
+
+        <TextView
+            android:id="@+id/displayAge_textView"
+            style="@style/display_details_text_style" />
+
+        <TextView
+            android:id="@+id/thanks_textView"
+            android:text="@string/thanks_for_answering"
+            android:visibility="gone"
+            style="@style/greetings_text_style" />
+
         <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/hello_textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/hello"
-                    android:textAlignment="center"
-                    android:textSize="30sp" />
+                    style="@style/greetings_text_style" />
 
                 <TextView
                     android:id="@+id/name_textView"
@@ -42,8 +58,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="@string/enter_name" />
+                    android:hint="@string/enter_name"
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/nickname_textView"
@@ -56,8 +72,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="@string/enter_nickname" />
+                    android:hint="@string/enter_nickname"
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/age_textView"
@@ -84,21 +100,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="@string/enter_birthday" />
+                    android:hint="@string/enter_birthday"
+                    android:inputType="textPersonName" />
 
                 <TextView
-                    android:id="@+id/phone_textView"
+                    android:id="@+id/mobile_textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/phone_number" />
+                    android:text="@string/what_is_your_mobile_number" />
 
                 <EditText
-                    android:id="@+id/phone_editText"
+                    android:id="@+id/mobile_editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="@string/enter_phone_number"
+                    android:hint="@string/enter_mobile_number"
                     android:inputType="phone" />
 
                 <TextView
@@ -126,8 +142,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="@string/enter_course" />
+                    android:hint="@string/enter_course"
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/dream_textView"
@@ -140,8 +156,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="@string/enter_dream" />
+                    android:hint="@string/enter_dream"
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/crush_textView"
@@ -154,8 +170,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="@string/enter_name_of_crush" />
+                    android:hint="@string/enter_name_of_crush"
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/message_textView"
@@ -182,10 +198,5 @@
 
     </LinearLayout>
 
-<!--    <data>-->
-<!--        <variable-->
-<!--            name="entry"-->
-<!--            type="com.example.resurreccion_exer4_slambook.Entry">-->
-<!--    </data>-->
 
 </layout>
